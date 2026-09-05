@@ -19,7 +19,7 @@ app.post('/create-checkout-session', async (req, res) => {
     mode: 'subscription',
     success_url: `${YOUR_DOMAIN}?success=true`,
     // Provide a name (for example, hosted_web_0001) to label this Checkout integration and measure its conversion independently
-    integration_identifier: '{{INTEGRATION_ID}}',
+    integration_identifier: 'llama_hosted_001',
   });
 
   res.redirect(303, session.url);
