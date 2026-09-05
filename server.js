@@ -16,7 +16,7 @@ app.post('/create-checkout-session', async (req, res) => {
         quantity: 1,
       },
     ],
-    mode: 'payment',
+    mode: 'subscription',
     success_url: `${YOUR_DOMAIN}?success=true`,
     // Provide a name (for example, hosted_web_0001) to label this Checkout integration and measure its conversion independently
     integration_identifier: '{{INTEGRATION_ID}}',
